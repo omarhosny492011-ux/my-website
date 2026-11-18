@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAISON LAYA — Ready to wear</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="top">
+  <div class="wrap nav">
+    <a href="#" class="logo">MAISON LAYA</a>
+    <ul>
+      <li><a href="#shop">Collection</a></li>
+      <li><a href="#story">Our story</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="cart-btn" id="openCart" aria-label="Open cart">Bag <b id="count">0</b></button>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-text">
+      <h1 class="rise">Clothes made to be worn for years.</h1>
+      <p class="rise">Natural fabrics, quiet colours and clean cuts. The Winter 26 collection is here.</p>
+      <div class="rise"><a href="#shop" class="btn">Shop the collection</a></div>
+    </div>
+    <div class="hero-art">
+      <svg viewBox="0 0 400 520" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <rect width="400" height="520" fill="#243630"/>
+        <circle cx="270" cy="190" r="150" fill="#2d443b"/>
+        <path d="M120 520 L135 250 Q200 215 265 250 L280 520Z" fill="#b49b6e"/>
+        <path d="M135 250 Q200 285 265 250 Q200 232 135 250Z" fill="#9c8559"/>
+        <path d="M200 262 V520" stroke="#8a7550" stroke-width="2"/>
+      </svg>
+      <div class="curtain"></div>
+      <div class="tag">The camel coat<small>Wool blend — EGP 8,900</small></div>
+    </div>
+  </div>
+
+  <!-- SHOP -->
+  <section id="shop">
+    <div class="wrap">
+      <div class="head">
+        <h2>The collection</h2>
+        <div class="filters" id="filters">
+          <button class="on" data-f="all">All</button>
+          <button data-f="tops">Tops</button>
+          <button data-f="dresses">Dresses</button>
+          <button data-f="outer">Outerwear</button>
+        </div>
+      </div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="story" id="story">
+    <div class="wrap">
+      <div>
+        <h2>Designed in Cairo, made with care.</h2>
+        <p>We make fewer pieces, in better fabric, and cut them to last. Every garment is sewn in small batches by a workshop we know by name.</p>
+        <a href="#contact" class="btn">Visit the studio</a>
+      </div>
+      <div class="facts">
+        <div><b>Fabric</b><span>Egyptian cotton, linen and wool blends</span></div>
+        <div><b>Production</b><span>Small batches, sewn locally</span></div>
+        <div><b>Delivery</b><span>2–4 days across Egypt</span></div>
+        <div><b>Returns</b><span>Free within 14 days</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="news" id="contact">
+    <div class="wrap">
+      <h2>Get first access to new drops</h2>
+      <p>One email a month. No spam.</p>
+      <form id="form">
+        <input type="email" id="email" placeholder="Your email address" required aria-label="Email address">
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="msg" id="msg" role="status"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Maison Laya</span>
+    <nav><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">WhatsApp</a></nav>
+  </div>
+</footer>
+
+<!-- CART -->
+<div class="shade" id="shade"></div>
+<aside class="drawer" aria-label="Shopping bag">
+  <h3>Your bag <button id="closeCart" aria-label="Close cart">✕</button></h3>
+  <div class="items" id="items"></div>
+  <div class="total">
+    <p><span>Total</span><b id="total">EGP 0</b></p>
+    <a href="#" class="btn" id="checkout">Checkout</a>
+  </div>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>
